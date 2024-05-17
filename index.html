@@ -1,19 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Yann-Désiré</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#hobbie">Hobbie</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <body>
-        
-    </body>
-    <footer>
 
-    </footer>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1>Salut, je suis <span id="name">Katchenin Yann-Désiré Adjé</span></h1>
+            <p>Je suis passionné par les nouvelles technologies, l'informatique et le monde de l'open-source,
+                précisement l'Administration des Systèmes et Réseaux</p>
+        </div>
+        <div class="link-mail">
+            <a href="mailto:yadje01@gmail.com">yadje01@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hobbies">
+        <h2>Mes Hobbies</h2>
+        <div id="open-source">
+            <h3>Monde de l'open-source</h3>
+            <p>Je suis passionné par les technologies open-source. 
+                J'aime implémenter des services open-source sur de distributions linux
+                afin de les utiliser au quotidien.    
+            </p>
+        </div>
+        <div id="linux">
+            <h3>Distribution Linux</h3>
+            <p>Utilisateur et fervent défenseur de Linux, 
+                j'ai exploré plusieurs distributions, dont Ubuntu, Fedora, CentOS. 
+                J'apprécie la liberté et la flexibilité offertes par Linux pour personnaliser et 
+                optimiser mon environnement de travail.</p>
+        </div>
+        <div id="basketball">
+            <h3>Basketball</h3>
+            <p>En dehors du monde numérique, je suis un joueur de basketball. 
+                J'aime participer à des matchs locaux.
+                Le basketball m'a appris l'importance du travail d'équipe et de la persévérance.</p>
+        </div>
+        <div id="bricolage">
+            <h3>Bricolage</h3>
+            <p>J'aime bricoler et créer des objets fonctionnels et esthétiques.
+                Que ce soit des projets d'électronique ou de rénovation, 
+                le bricolage me permet de développer ma créativité et ma capacité à résoudre 
+                des problèmes pratiques.</p>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="/assets/images/" alt="Cloud Home">
+                <h3>Projet 1 : Mise en place d'un Cloud Home
+                </h3>
+                <p>Sur une ancienne machine, j'ai déployer un service de Cloud pour stocker
+                    les données des différents équipements de la maison
+                </p>
+            </div>
+            <div class="project-item">
+                <h3>Projet 2: Mise en place d'un serveur DNs et Web</h3>
+                <p>J'ai eu configuré le service Apache sur Ubuntu et Centos </p>
+            </div>
+            <!-- Ajoute plus de projets ici -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
