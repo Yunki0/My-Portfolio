@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'PoetsenOne';
+    src: url('/assets/fonts/Poetsen_One/PoetsenOne-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* Partie Header */
+header{
+
+}
+/* Menu de navigation */
+
+
+/* Partie Main */
+
+/* Partie Footer */
+
+/* Responsivité */
