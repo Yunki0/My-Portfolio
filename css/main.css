@@ -5,8 +5,24 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format(truetype)
+         url('/assets/fonts/Poppins/Poppins-Light.ttf') format(truetype)
+         url('/assets/fonts/Poppins/Poppins-Medium.ttf') format(truetype)
+         url('/assets/fonts/Poppins/Poppins-Regular.ttf') format(truetype)
+         url('/assets/fonts/Poppins/Poppins-SemiBold.ttf')format(truetype);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* On ajoute un coeur avant les liens */
 a{
     text-decoration: none;
+    color: #191919;
 }
 li{
     list-style-type: none;
@@ -14,13 +30,52 @@ li{
 
 /* Partie Header */
 header{
-
+    background: #A3C6C4;
+    padding: 5px;
+    width: 100%;
+    height: 80px;
 }
 /* Menu de navigation */
+#navbar-content{
+    display: flex;
+    justify-content: end;
+    justify-content: space-around;
+    color: #191919;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+#navbar-content li:not(#logo){
 
-
+}
+#logo{
+    font-family: 'PoetsenOne';
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: 2%;
+}
+.btn{
+    padding: 10px;
+    border: 1px solid #E0E7E9;
+    border-radius: 30px;
+    transition: .5s;
+}
+    .btn:hover{
+        background: #f9f9f9;
+        border: 1px solid #f9f9f9;
+    }
 /* Partie Main */
+main{
+    scroll-snap-type: y mandatory;
 
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
 /* Partie Footer */
 
 /* Responsivité */
