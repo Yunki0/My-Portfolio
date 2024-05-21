@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('#navbar button');
+    const navbarLinks = document.querySelectorAll('#navbar a');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            const targetId = this.getAttribute('data-target');
-            const targetSection = document.querySelector(targetId);
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
 
             if (targetSection) {
                 targetSection.scrollIntoView({ behavior: 'smooth' });

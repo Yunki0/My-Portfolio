@@ -30,7 +30,6 @@ li{
 
 /* Partie Header */
 header{
-    background: #A3C6C4;
     padding: 5px;
     width: 100%;
     height: 80px;
@@ -52,18 +51,17 @@ header{
     font-family: 'PoetsenOne';
     font-size: 25px;
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 2%;
+    color: #f9f9f9;
 }
 .btn{
-    padding: 10px;
-    border: 1px solid #E0E7E9;
-    border-radius: 30px;
-    transition: .5s;
+    color: #f9f9f9;
+    font-weight: 600;
 }
     .btn:hover{
-        background: #f9f9f9;
-        border: 1px solid #f9f9f9;
+        color: #F52889;
+        transition: .7s;
     }
 /* Partie Main */
 main{
@@ -80,8 +78,8 @@ section{
     background-repeat: no-repeat;
 }
 #home{
-    background-image: url('/assets/images/background\ 1.svg');
-    color: black;
+    background-image: url('/assets/images/halftone-background-with-circles/5172658.jpg');
+    color: #f9f9f9;
     display: flex;
     flex-direction: column;
 }
