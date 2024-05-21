@@ -84,7 +84,21 @@ section{
     flex-direction: column;
 }
     #home a{
-        color: red;
+        color: #F52889;
+    }
+
+#hobbies{
+    background-image: url('/assets/images/purple-bokeh-digital-business-background.jpg');
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+    #open-source{
+        margin-top: 70px;
+    }
+    .hobby{
+        width: 300px;
+        height: 300px;
     }
 /* Partie Footer */
 
