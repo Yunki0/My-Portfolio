@@ -1,0 +1,4 @@
+                <li class="btn"><a href="#home">Accueil</a></li>
+                <li class="btn"><a href="#hobbies">Hobbies</a></li>
+                <li class="btn"><a href="#projects">Projets</a></li>
+                <li class="btn"><a href="#contact">Contact</a></li>

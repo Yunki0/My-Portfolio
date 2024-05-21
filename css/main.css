@@ -34,6 +34,7 @@ header{
     padding: 5px;
     width: 100%;
     height: 80px;
+    position: fixed;
 }
 /* Menu de navigation */
 #navbar-content{
@@ -67,7 +68,6 @@ header{
 /* Partie Main */
 main{
     scroll-snap-type: y mandatory;
-
 }
 section{
     height: 100vh;
@@ -75,7 +75,19 @@ section{
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+#home{
+    background-image: url('/assets/images/background\ 1.svg');
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+    #home a{
+        color: red;
+    }
 /* Partie Footer */
 
 /* Responsivité */
